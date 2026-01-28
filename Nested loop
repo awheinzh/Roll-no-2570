@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter the size of the multiplication table: ";
+    cin >> n;
+
+    // Nested loop: outer loop for rows, inner loop for columns
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cout << i * j << "\t";  // Print product
+        }
+        cout << endl;  // Move to next row
+    }
+
+    return 0;
+}
